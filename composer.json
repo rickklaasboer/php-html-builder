@@ -1,0 +1,23 @@
+{
+    "name": "rick-klaasboer/php-html-builder",
+    "description": "A library that builds html using PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rick Klaasboer",
+            "email": "dev@klaasboer.org"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "HtmlBuilder\\": "src/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.2"
+    }
+}
