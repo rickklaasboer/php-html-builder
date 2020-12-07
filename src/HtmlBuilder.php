@@ -59,7 +59,7 @@ class HtmlBuilder
     }
 
     /**
-     * Recusion magic
+     * Recursion magic
      *
      * @param $item HtmlElement|HtmlElement[]
      * @param $callback
@@ -69,9 +69,11 @@ class HtmlBuilder
     {
         if (is_array($item->getChildren())) {
             print($item->getOpenTag());
+
             foreach ($item->getChildren() as $child) {
                 $this->recurse($child, $callback);
             }
+
             print($item->getCloseTag());
         } else {
             call_user_func($callback, $item);
