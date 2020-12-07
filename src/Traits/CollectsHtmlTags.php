@@ -193,6 +193,7 @@ trait CollectsHtmlTags
         'picture' => PictureTag::class,
         'svg' => SvgTag::class,
 
+        // Media
         'audio' => AudioTag::class,
         'source' => SourceTag::class,
         'track' => TrackTag::class,

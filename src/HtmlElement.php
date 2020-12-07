@@ -102,7 +102,8 @@ class HtmlElement
      * @param string $content
      * @return HtmlElement
      */
-    public function setContent($content) {
+    public function setContent($content)
+    {
         $this->content = $content;
 
         return $this;
@@ -124,7 +125,8 @@ class HtmlElement
      * @param array $children
      * @return HtmlElement
      */
-    public function setChildren($children) {
+    public function setChildren($children)
+    {
         $this->children = $children;
 
         return $this;
@@ -136,7 +138,8 @@ class HtmlElement
      * @param mixed $id
      * @return HtmlElement
      */
-    public function setId($id) {
+    public function setId($id)
+    {
         $this->id = $id;
 
         return $this;
@@ -148,7 +151,8 @@ class HtmlElement
      * @param array|mixed $classNames
      * @return HtmlElement
      */
-    public function setClassNames($classNames) {
+    public function setClassNames($classNames)
+    {
         $classNames = is_array($classNames) ? $classNames : func_get_args();
         $this->classNames = $classNames;
 
@@ -189,7 +193,8 @@ class HtmlElement
      *
      * @return false|string
      */
-    protected function getClassName() {
+    protected function getClassName()
+    {
         return get_class($this);
     }
 }
