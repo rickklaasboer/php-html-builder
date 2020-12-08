@@ -133,33 +133,6 @@ class HtmlElement
     }
 
     /**
-     * Set element ID
-     *
-     * @param mixed $id
-     * @return HtmlElement
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
-    /**
-     * Set element classNames
-     *
-     * @param array|mixed $classNames
-     * @return HtmlElement
-     */
-    public function setClassNames($classNames)
-    {
-        $classNames = is_array($classNames) ? $classNames : func_get_args();
-        $this->classNames = $classNames;
-
-        return $this;
-    }
-
-    /**
      * Set HTML attributes
      *
      * @param $attributes
